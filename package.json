@@ -1,0 +1,71 @@
+{
+  "name": "react-strict-tsc-eslint-prettier-husky-starter",
+  "version": "0.1.0",
+  "author": "@thepedroferrari",
+  "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint:fix": "eslint -c './.eslintrc' --fix --ext js,jsx,ts,tsx './src/.'",
+    "prettier:check": "prettier --check './src/.",
+    "prettier:fix": "prettier --write --ignore-unknown './src/.'",
+    "postinstall": "husky install"
+  },
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^11.2.5",
+    "@testing-library/user-event": "^12.8.3",
+    "@types/jest": "^26.0.20",
+    "@types/node": "^14.14.35",
+    "@types/react": "^17.0.3",
+    "@types/react-dom": "^17.0.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-scripts": "4.0.3",
+    "simple-zustand-devtools": "^1.0.0",
+    "typescript": "^4.2.3",
+    "web-vitals": "^1.1.1",
+    "zustand": "^3.3.3"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.18.0",
+    "@typescript-eslint/parser": "^4.18.0",
+    "eslint": "^7.22.0",
+    "eslint-config-airbnb": "18.2.1",
+    "eslint-config-airbnb-typescript": "^12.3.1",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jest": "^24.3.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "4.2.0",
+    "husky": "^5.1.3",
+    "prettier": "^2.2.1"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.5%",
+      "last 2 Chrome versions",
+      "last 2 Safari versions",
+      "last 2 Edge versions",
+      "last 2 Firefox versions",
+      "not ie > 0",
+      "not op_mini all",
+      "not and_uc > 0"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
